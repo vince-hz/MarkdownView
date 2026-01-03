@@ -35,6 +35,9 @@ let package = Package(
             .product(name: "cmark-gfm", package: "swift-cmark"),
             .product(name: "cmark-gfm-extensions", package: "swift-cmark"),
         ]),
-        .target(name: "Litext"),
+        .target(
+            name: "Litext",
+            resources: [.process("Resources")]
+        ),
     ]
 )
